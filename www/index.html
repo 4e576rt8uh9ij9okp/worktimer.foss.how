@@ -1,1 +1,34 @@
-<h1>FOSS WorkTimer</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOSS WorkTimer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="topPanel">
+            <div id="title">FOSS WorkTimer</div>
+            <button id="help">Help</button>
+            <button id="settings">Settings</button>
+        </div>
+        <div id="stats">
+            <div class="space-between">
+                <span>Total</span>
+                <span>48.69h</span>
+                <span>420$</span>
+            </div>
+        </div>
+        <div id="list"></div>
+        <div id="controls" class="space-between">
+            <button id="break" disabled>Start Break</button>
+            <button id="work">Start Work</button>
+        </div>
+    </div>
+    <script src="vnode.js"></script>
+    <script src="Storage.js"></script>
+    <script src="Timer.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
