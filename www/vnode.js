@@ -34,6 +34,10 @@ class VNode{
     appendAll(element){
         this.root.append(...element)
     }
+
+    text(txt){
+        this.root.textContent = txt
+    }
 }
 
 class VList extends VNode{

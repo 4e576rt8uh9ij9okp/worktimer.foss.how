@@ -5,6 +5,10 @@ class Storage{
         this.db;
     }
 
+    id(){
+        return window.crypto.randomUUID()
+    }
+
     connect(){
         const indexedDB =
             window.indexedDB ||
@@ -37,10 +41,8 @@ class Storage{
 
     }
 
-    tx(collection){
-        this._tx = this.db.transaction(collection, "readwrite")
-
-        console.log("storeage", this)
+    tx(collection, mode){
+        this._tx = this.db.transaction(collection, mode)
 
         return this
     }
